@@ -1,0 +1,6 @@
+ALTER TABLE `booking`.`hotel` 
+CHANGE COLUMN `id` `id` INT NOT NULL AUTO_INCREMENT ;
+
+
+ALTER TABLE `booking`.`rooms` 
+CHANGE COLUMN `roomId` `roomId` INT NOT NULL AUTO_INCREMENT ;
