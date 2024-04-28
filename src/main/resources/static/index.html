@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Book</title>
+</head>
+
+<body onload="setUp()">
+
+<div class="container">
+    <h1>Booking</h1>
+</div>
+
+<div class="container" id="hotels"></div>
+
+
+<div class="modal1" id="modal1">
+    <h2>Book a room</h2>
+    <form onsubmit="book()">
+        <select required name="rooms" id="activeRooms">
+            <option value="" disabled selected hidden>Room N#</option>
+        </select>
+        &nbsp
+        <input type="submit" id="bookingBtn" value="Submit">
+    </form>
+</div>
+<div class="modal1" id="modal2">
+    <h2>Add a room</h2>
+    <form onsubmit="addNewHotel()">
+        <div>
+            <label for="chatName">Hotel Name:</label><br>
+            <input required type="text" class="inp" id="chatName" name="chatName"><br>
+        </div>
+        <div>
+            <label for="amount">Number of Rooms:</label><br>
+            <input required type="number" min="1" class="inp" id="amount" name="amount">
+        </div>
+        <input type="submit" id="btn" value="Submit">
+    </form>
+</div>
+<div class="container">
+    <input type="button" onclick="openModel2()" value="+">
+</div>
+<div id="overlay1" class="overlay" onclick="closeModel1()"> </div>
+<div id="overlay2" class="overlay" onclick="closeModel2()"> </div>
+</body>
+
+</html>

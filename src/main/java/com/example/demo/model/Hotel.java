@@ -41,25 +41,4 @@ public class Hotel {
             this.rooms.add(room);
         }
     }
-//    public int numOfRooms(){
-//        return rooms.size();
-//    }
-//    public int numOfBookedRooms(){
-//        int i=0;
-//        for (Room room:rooms){
-//            if (room.isBooked()){
-//                i++;
-//            }
-//        }
-//        return i;
-//    }
-//    public List<Integer> getActiveRooms(){
-//        List<Integer> rooms1=new ArrayList<>();
-//        for (Room room:rooms){
-//            if (!room.isBooked()){
-//                rooms1.add(room.getRoomNum());
-//            }
-//        }
-//        return rooms1;
-//    }
 }
